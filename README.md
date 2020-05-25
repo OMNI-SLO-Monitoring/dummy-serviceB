@@ -50,9 +50,10 @@ $ npm run start:prod
 ## Using the app
 
 ```
-# the app will run on localhost:3000
+The app will run on localhost:3000
 
 # GET requests
+
 requesting the status: /serviceb/status
 
 requesting the cpu load: /serviceb/cpuload
