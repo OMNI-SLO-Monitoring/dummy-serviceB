@@ -10,7 +10,7 @@ export class ServiceBController {
     return this._serviceB.getMsg();
   }
 
-  @Get('cpuload')
+  @Get('cpu')
   async getCPULoad(): Promise<any> {
     return this._serviceB.getCpuLoad();
   }
