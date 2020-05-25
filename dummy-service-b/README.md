@@ -47,17 +47,17 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Test
+## Using the app
 
-```bash
-# unit tests
-$ npm run test
+```
+The app will run on localhost:3000
 
-# e2e tests
-$ npm run test:e2e
+# GET requests
 
-# test coverage
-$ npm run test:cov
+requesting the status: /serviceb/status
+
+requesting the cpu load: /serviceb/cpuload
+
 ```
 
 ## Support
@@ -72,4 +72,4 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## License
 
-  Nest is [MIT licensed](LICENSE).
+  Nest is [MIT licensed](LICENSE)
