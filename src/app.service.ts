@@ -2,8 +2,8 @@ import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-
   success: boolean = false;
+  //default delay
   delay = 5000;
 
   async getMsg(): Promise<String> {
@@ -14,7 +14,7 @@ export class AppService {
         } else {
           rej();
         }
-      }, this.delay)
-    })
+      }, this.delay);
+    });
   }
 }

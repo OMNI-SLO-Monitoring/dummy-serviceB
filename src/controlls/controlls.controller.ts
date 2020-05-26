@@ -1,10 +1,18 @@
-import { Controller, Get, Render, Post, Req, Query, Body, Redirect } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Render,
+  Post,
+  Req,
+  Query,
+  Body,
+  Redirect,
+} from '@nestjs/common';
 import { AppService } from 'src/app.service';
 import { Request } from 'express';
 
-@Controller('controlls')
+@Controller('controls')
 export class ControllsController {
-
   constructor(private appService: AppService) {}
 
   @Get()
@@ -12,23 +20,22 @@ export class ControllsController {
   root() {
     return {
       success: this.appService.success,
-      delay: this.appService.delay
-    }
+      delay: this.appService.delay,
+    };
   }
 
   @Post()
-  @Redirect('/controlls')
+  @Redirect('/controls')
   updateParams(@Body() body) {
     if (body.delay) {
-        this.appService.delay = body.delay;
+      this.appService.delay = body.delay;
     }
     if (body.success) {
-        this.appService.success = body.success;
+      this.appService.success = body.success;
     } else {
-        // Hack: Uncheck Checkboxes are not included in HTML Form Data
-        this.appService.success = false;
+      // Hack: Uncheck Checkboxes are not included in HTML Form Data
+      this.appService.success = false;
     }
-    return "ok";
+    return 'ok';
   }
-  
 }

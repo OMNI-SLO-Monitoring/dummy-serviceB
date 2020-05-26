@@ -50,13 +50,12 @@ $ npm run start:prod
 ## Using the app
 
 ```
-The app will run on localhost:3000
 
-# GET requests
+Go to localhost:3000/controls to customize the settings: Request success and delay of response
 
-requesting the status: /serviceb/status
+With localhost:3000, one gets the status of the dummy-service B. This is adjustable by toggling the Request success checkbox and the delay of response on localhost:3000/controls.
 
-requesting the cpu load: /serviceb/cpu
+With localhost:3000/cpu, one gets the cpu utilization value of the dummy-service B.
 
 ```
 
