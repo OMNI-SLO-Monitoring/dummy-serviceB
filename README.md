@@ -56,7 +56,7 @@ The app will run on localhost:3000
 
 requesting the status: /serviceb/status
 
-requesting the cpu load: /serviceb/cpuload
+requesting the cpu load: /serviceb/cpu
 
 ```
 
