@@ -10,7 +10,20 @@
 
 <body>
     <div id="title">
-        <p id=title> Dummy-Service B armed and ready! </p>
+        {{!-- <p id=title> Dummy-Service B armed and ready! </p> --}}
+        <h1>Dummy Service B Controlls</h1>
+        <form action="/controlls" method="POST">
+            <p>Request Success:</p>
+            {{#if success}}
+            <input type="checkbox" checked name="success">
+            {{else}}
+            <input type="checkbox" name="success">
+            {{/if}}
+            <p>Simulated Delay:</p>
+            <input type="number" value="{{delay}}" name="delay">
+            <br>
+            <button>Update</button>
+        </form>
     </div>
 </body>
 

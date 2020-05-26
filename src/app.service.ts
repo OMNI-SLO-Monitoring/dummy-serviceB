@@ -3,8 +3,8 @@ import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 @Injectable()
 export class AppService {
 
-  private success: boolean = true;
-  private delay = 5000;
+  success: boolean = false;
+  delay = 5000;
 
   async getMsg(): Promise<String> {
     return new Promise((res, rej) => {
