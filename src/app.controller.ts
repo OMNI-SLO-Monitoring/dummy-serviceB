@@ -6,7 +6,7 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  async respondToReq(): Promise<any> {
+  respondToReq() {
     return this.appService.getMsg();
   }
 }

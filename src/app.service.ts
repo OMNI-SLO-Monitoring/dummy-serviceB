@@ -6,7 +6,7 @@ export class AppService {
   //default delay
   delay = 5000;
 
-  async getMsg(): Promise<String> {
+  async getMsg(): Promise<any> {
     return new Promise((res, rej) => {
       setTimeout(() => {
         if (this.success) {
