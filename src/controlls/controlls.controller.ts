@@ -11,6 +11,9 @@ import {
 import { AppService } from 'src/app.service';
 import { Request } from 'express';
 
+/*
+This controller renders the UI and updates the it based on the input values of the user.
+*/
 @Controller('controls')
 export class ControllsController {
   constructor(private appService: AppService) {}
@@ -24,6 +27,10 @@ export class ControllsController {
     };
   }
 
+  /*
+  After confirming the desired input values, the post request containing the input values
+  will be handled in this method which updates the UI and its display accordingly.
+  */
   @Post()
   @Redirect('/controls')
   updateParams(@Body() body) {
