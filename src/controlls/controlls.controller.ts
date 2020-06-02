@@ -9,7 +9,6 @@ import {
   Redirect,
 } from '@nestjs/common';
 import { AppService } from 'src/app.service';
-import { Request } from 'express';
 import { CpuUtilizationService } from 'src/cpu-utilization/cpu-utilization.service';
 
 /*

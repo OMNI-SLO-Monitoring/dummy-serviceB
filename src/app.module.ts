@@ -6,11 +6,15 @@ import { CpuUtlizationModule } from './cpu-utilization/cpu-utilization.module';
 import { ControllsController } from './controlls/controlls.controller';
 
 @Module({
-  imports: [CpuUtlizationModule],
+  imports: [
+    CpuUtlizationModule
+  ],
   controllers: [
     AppController,
     ControllsController
   ],
-  providers: [AppService, CpuUtilizationService],
+  providers: [
+    AppService,
+  ],
 })
 export class AppModule {}
